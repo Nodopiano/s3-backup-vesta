@@ -37,12 +37,3 @@ I just upload weekly backup every Sunday:
 ```
 wget -O /etc/cron.weekly/s3-backup-vesta https://raw.githubusercontent.com/olshek/s3-backup-vesta/master/s3-backup-vesta && chmod +x /etc/cron.weekly/s3-backup-vesta
 ```
-
-## Test
-
-Just run
-
-```
-/etc/cron.weekly/s3-backup-vesta
-```
-
