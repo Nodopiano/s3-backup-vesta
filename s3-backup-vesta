@@ -2,5 +2,4 @@
 
 set -e
 
-for user in `grep @ /etc/passwd|cut -f 1 -d :`; do aws s3 cp /backup/$user.$(date +%F).tar s3://`hostname`/ --region=eu-central-1; done
-
+for user in `grep @ /etc/passwd|cut -f 1 -d :`; do aws s3 cp /backup/$user.$(date +%F).tar s3://`hostname`/; done
