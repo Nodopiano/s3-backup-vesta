@@ -30,7 +30,7 @@ Click "Create Policy" - > Select "Policy Generator" -> Choose Amazon s3, one act
   Default output format [None]: json
   ```
 
-## Cron
+## Weekly Cron
 
 I just upload weekly backup every Sunday:
 
