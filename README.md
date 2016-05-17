@@ -1,6 +1,7 @@
-# s3-backup-vesta
+# s3-backup-vesta 
 
-Note: I use server name some.yourserver.com as a bucket name.
+One-line script that takes daily backup weekly and uploads it to S3. 
+We create a role and user with minimum allowed actions(only one) and we manage backups Lifecycle on AWS side.
 
 ## Amazon AWS
 
@@ -32,7 +33,7 @@ Click "Create Policy" - > Select "Policy Generator" -> Choose Amazon s3, one act
 
 ## Weekly Cron
 
-I just upload weekly backup every Sunday:
+Create or wget s3-backup-vesta script to /etc/cron.weekly folder.
 
 ```
 wget -O /etc/cron.weekly/s3-backup-vesta https://raw.githubusercontent.com/olshek/s3-backup-vesta/master/s3-backup-vesta && chmod +x /etc/cron.weekly/s3-backup-vesta
