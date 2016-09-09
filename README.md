@@ -36,5 +36,5 @@ Click "Create Policy" - > Select "Policy Generator" -> Choose Amazon s3, one act
 Create or wget s3-backup-vesta script to /etc/cron.weekly folder.
 
 ```
-wget -O /etc/cron.weekly/s3-backup-vesta https://raw.githubusercontent.com/olshek/s3-backup-vesta/master/s3-backup-vesta && chmod +x /etc/cron.weekly/s3-backup-vesta
+wget -O /etc/cron.weekly/s3-backup-vesta https://raw.githubusercontent.com/o1ek/s3-backup-vesta/master/s3-backup-vesta && chmod +x /etc/cron.weekly/s3-backup-vesta
 ```
